@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".UI.MainActivity">
+
+        <Button
+            android:id="@+id/mainMenuTransactInventory"
+            android:layout_width="205dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:onClick="enterAssemblyTransactionSelectionScreen"
+            android:text="Transact Inventory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainMenuSetUpAssemblyParts" />
+
+        <Button
+            android:id="@+id/mainMenuAssemblyInventoryOnHand"
+            android:layout_width="205dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:onClick="enterAssemblyTableScreen"
+            android:text="Table - Assembly Inventory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainMenuTransactInventory" />
+
+        <Button
+            android:id="@+id/mainMenuPurchasedComponentInventoryOnHand"
+            android:layout_width="205dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:onClick="enterPurchasedComponentTableScreen"
+            android:text="Table - Purchased Component Inventory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainMenuAssemblyInventoryOnHand" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/menuToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="52dp"
+            android:background="@color/material_dynamic_tertiary90"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="150dp"
+            android:background="#000000"
+            android:src="@drawable/baseline_cable_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/menuToolbar" />
+
+        <Button
+            android:id="@+id/mainMenuSetUpPurchasedParts"
+            android:layout_width="205dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="160dp"
+            android:onClick="enterPurchasedComponentsScreen"
+            android:text="Set Up Purchased Parts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <Button
+            android:id="@+id/mainMenuSetUpAssemblyParts"
+            android:layout_width="205dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="160dp"
+            android:onClick="enterAssemblyPartsScreen"
+            android:text="Set Up Assembly Parts"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mainMenuSetUpPurchasedParts" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

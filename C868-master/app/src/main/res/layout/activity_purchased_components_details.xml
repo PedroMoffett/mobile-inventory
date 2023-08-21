@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/material_dynamic_tertiary90"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedComponentLeadTime"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="Lead Time Days"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPurchasedPartComponentList" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedComponentLeadTime2"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="Assembly"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPurchasedComponentLeadTime" />
+
+        <EditText
+            android:id="@+id/editTextViewPurchasedComponentVendor2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="Vendor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerPurchasedComponentLocation" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedPartComponentList"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="Vendor"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPurchasedPartLocation" />
+
+        <EditText
+            android:id="@+id/editTextViewPurchasedComponentLeadTime"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:text="Lead Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextViewPurchasedComponentVendor2" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedPartLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="Location"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPurchasedPartQty" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedPartQty"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="Quantity"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPurchasedPartDescription" />
+
+        <EditText
+            android:id="@+id/editTextViewPurchasedPartDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="Description"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextViewPurchasedPartName" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedPartDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_vertical"
+            android:text="Description"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPurchasedPartName" />
+
+        <EditText
+            android:id="@+id/editTextViewPurchasedPartQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:text="Quantity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextViewPurchasedPartDescription" />
+
+        <TextView
+            android:id="@+id/textViewPurchasedPartName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="75dp"
+            android:gravity="center_vertical"
+            android:text="Part Name"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editTextViewPurchasedPartName"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:text="Name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerAssemblyName"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextViewPurchasedComponentLeadTime" />
+
+        <Spinner
+            android:id="@+id/spinnerPurchasedComponentLocation"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextViewPurchasedPartQuantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
